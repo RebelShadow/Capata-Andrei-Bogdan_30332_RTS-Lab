@@ -1,0 +1,51 @@
+@startuml
+package ex2 {
+
+    class Main {
+        - static final noOfThreads: int
+        - static final processorLoad: int
+        + main(args: String[])
+    }
+
+    class Controller {
+        - window: Window
+        + start(noOfThreads: int, processorLoad: int)
+        + update(o: Observable, arg: Object)
+    }
+
+    class Fir {
+        - id: int
+        - processorLoad: int
+        + Fir(id: int, procLoad: int)
+        + run()
+    }
+
+    class UpdateObserver {
+        - id: int
+        - progress: int
+        + getId(): int
+        + getProgress(): int
+        + setId(id: int): void
+        + setProgress(progress: int): void
+        + UpdateObserver(id: int, progress: int)
+    }
+
+    class Window {
+        - bars: ArrayList<JProgressBar>
+        + getBars(): ArrayList<JProgressBar>
+        + Window(noOfThreads: int)
+        - init(n: int): void
+        + setProgressValue(updateObserver: UpdateObserver): void
+    }
+
+    Main --|> Controller : 1
+    Controller --|> Observer : implements
+    Controller --|> Window : 1
+    Controller --* Fir : "n"
+    Fir --|> Runnable : implements
+    Fir --|> Observable : extends
+    Fir --> UpdateObserver : uses
+    Window --|> JFrame : extends
+
+}
+@enduml
