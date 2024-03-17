@@ -1,0 +1,26 @@
+@startuml
+participant User
+participant Controller
+participant Window
+participant Fir
+participant UpdateObserver
+
+User -> Controller: start(noOfThreads, processorLoad)
+activate Controller
+Controller -> Window: Window(noOfThreads)
+activate Window
+loop noOfThreads times
+    Controller -> Fir: Fir(id, processorLoad)
+    activate Fir
+    Fir -> Fir: run()
+    Fir -> UpdateObserver: new UpdateObserver(id, c)
+    activate UpdateObserver
+    UpdateObserver -> Window: setProgressValue(updateObserver)
+    activate Window
+    deactivate Window
+    deactivate UpdateObserver
+    deactivate Fir
+end
+deactivate Window
+deactivate Controller
+@enduml

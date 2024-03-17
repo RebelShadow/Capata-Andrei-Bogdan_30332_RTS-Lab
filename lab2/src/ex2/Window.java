@@ -1,23 +1,22 @@
-package ex1;
+package ex2;
 
 import java.util.ArrayList;
+import java.util.Observable;
+import java.util.Observer;
 import javax.swing.JFrame;
 import javax.swing.JProgressBar;
 
-public class Window extends JFrame{
-
+public class Window extends JFrame {
     ArrayList<JProgressBar> bars=new ArrayList<JProgressBar>();
 
-    public Window(int nrThreads) {
-
+    public ArrayList<JProgressBar> getBars(){
+        return this.bars;
+    }
+    public Window(int noOfThreads) {
         setLayout(null);
-
         setSize(450,400);
-
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-
-        init(nrThreads);
-
+        init(noOfThreads);
         this.setVisible(true);
 
     }
@@ -25,25 +24,17 @@ public class Window extends JFrame{
     private void init(int n){
 
         for(int i=0 ;i<n; i++){
-
             JProgressBar pb=new JProgressBar();
-
             pb.setMaximum(1000);
-
             pb.setBounds(50,(i+1)*30,350,20);
-
             this.add(pb);
-
             this.bars.add(pb);
 
         }
 
     }
 
-    public void setProgressValue(int id,int val){
-
-        bars.get(id).setValue(val);
-
+    public void setProgressValue(UpdateObserver updateObserver){
+        bars.get(updateObserver.getId()).setValue(updateObserver.getProgress());
     }
-
 }
