@@ -6,7 +6,7 @@ import java.util.Observer;
 import javax.swing.JFrame;
 import javax.swing.JProgressBar;
 
-public class Window extends JFrame {
+public class Window extends JFrame implements Observer {
     ArrayList<JProgressBar> bars=new ArrayList<JProgressBar>();
 
     public ArrayList<JProgressBar> getBars(){
@@ -34,7 +34,11 @@ public class Window extends JFrame {
 
     }
 
-    public void setProgressValue(UpdateObserver updateObserver){
-        bars.get(updateObserver.getId()).setValue(updateObserver.getProgress());
+    @Override
+    public void update(Observable o, Object arg) {
+        int id = ((UpdateObserver) o).getId();
+        int progress = ((UpdateObserver) o).getProgress();
+        bars.get(id).setValue(progress);
+
     }
 }

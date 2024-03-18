@@ -1,0 +1,30 @@
+@startuml
+
+package example2 {
+    class Main
+    class Buffer {
+        - content: ArrayList<Double>
+        + put(double d): void
+        + get(): double
+    }
+    class Producer {
+        - bf: Buffer
+        - thread: Thread
+        + start(): void
+        + run(): void
+    }
+    class Consumer {
+        - bf: Buffer
+        - thread: Thread
+        + start(): void
+        + run(): void
+    }
+
+    Main --> Buffer
+    Main --> Producer
+    Main --> Consumer
+    Consumer --> Buffer
+    Producer --> Buffer
+}
+
+@enduml

@@ -1,0 +1,28 @@
+@startuml
+participant "Main Thread" as MainThread
+participant "ThreadGroup" as ThreadGroup
+participant "ThreadEx" as ThreadEx
+
+MainThread -> ThreadGroup : Create Thread Group
+activate ThreadGroup
+ThreadGroup -> ThreadEx : Create ThreadEx #1
+activate ThreadEx
+ThreadEx -> MainThread : ThreadEx #1 ON.
+deactivate ThreadEx
+ThreadGroup -> ThreadEx : Create ThreadEx #2
+activate ThreadEx
+ThreadEx -> MainThread : ThreadEx #2 ON.
+deactivate ThreadEx
+ThreadGroup -> ThreadEx : Create ThreadEx #3
+activate ThreadEx
+ThreadEx -> MainThread : ThreadEx #3 ON.
+deactivate ThreadEx
+MainThread -> MainThread : Sleep (1 second)
+MainThread -> ThreadGroup : Print active thread count
+MainThread -> MainThread : Print active thread names
+MainThread -> ThreadEx : Stop ThreadEx #1
+MainThread -> MainThread : Sleep (1 second)
+MainThread -> ThreadGroup : Print active thread count
+MainThread -> ThreadGroup : Interrupt all threads
+deactivate ThreadGroup
+@enduml

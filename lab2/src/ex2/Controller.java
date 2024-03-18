@@ -1,9 +1,10 @@
 package ex2;
 
+import javax.swing.*;
 import java.util.Observable;
 import java.util.Observer;
 
-public class Controller implements Observer{
+public class Controller extends Observable{
 
     Window window;
     public void start(int noOfThreads, int processorLoad) {
@@ -11,8 +12,12 @@ public class Controller implements Observer{
 
         for (int i = 0; i < noOfThreads; i++) {
             Fir fir = new Fir(i, processorLoad);
-            fir.addObserver(this);
-
+            fir.addObserver(window);
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             Thread firThread = new Thread(fir);
             if (i + 2 > Thread.MAX_PRIORITY) {
                 break;
@@ -23,8 +28,5 @@ public class Controller implements Observer{
         }
     }
 
-    @Override
-    public void update(Observable o, Object arg) {
-        window.setProgressValue((UpdateObserver)arg);
-    }
+
 }

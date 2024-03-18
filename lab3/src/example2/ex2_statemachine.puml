@@ -1,0 +1,11 @@
+@startuml
+
+[*] --> BufferEmpty
+
+BufferEmpty : Buffer is empty
+BufferFull : Buffer is full
+
+BufferEmpty --> BufferFull : put(double d)
+BufferFull --> BufferEmpty : get()
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+class ThreadGroup {
+    - name: String
+    + ThreadGroup(name: String)
+    + activeCount(): int
+    + enumerate(list: Thread[]): int
+    + interrupt(): void
+}
+
+class ThreadEx {
+    - stop: boolean
+    + ThreadEx(threadGroup: ThreadGroup, name: String)
+    + run(): void
+    + stopThread(): void
+}
+
+ThreadGroup "1" *-- "0..*" ThreadEx : contains
+
+@enduml

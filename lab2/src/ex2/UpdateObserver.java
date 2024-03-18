@@ -1,6 +1,8 @@
 package ex2;
 
-public class UpdateObserver {
+import java.util.Observable;
+
+public class UpdateObserver extends Observable {
     public int id;
     public int progress;
 

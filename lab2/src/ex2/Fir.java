@@ -24,9 +24,9 @@ public class Fir extends Observable implements Runnable {
             }
             c++;
             try {
-                Thread.sleep(10);
-            } catch (Exception e) {
-                System.out.println("Thread cannot sleep");
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
             }
             this.setChanged();
             this.notifyObservers(new UpdateObserver(id, c));

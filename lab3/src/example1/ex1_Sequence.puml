@@ -1,0 +1,24 @@
+@startuml
+
+participant Main
+participant FileService
+participant WThread
+participant RThread
+
+Main -> FileService: creates
+Main -> WThread: creates
+Main -> RThread: creates
+
+loop Read messages
+    RThread -> FileService: read()
+    FileService -> RThread: last message
+end
+
+loop Write messages
+    WThread -> FileService: write(msg)
+    FileService -> WThread: acknowledgment
+end
+
+
+
+@enduml
