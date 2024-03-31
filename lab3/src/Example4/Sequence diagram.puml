@@ -1,0 +1,37 @@
+
+@startuml
+participant "ThreadGroupDemo" as TGD
+participant "ThreadGroup" as TG
+participant "ThreadEx1" as TE1
+participant "ThreadEx2" as TE2
+participant "ThreadEx3" as TE3
+
+TGD -> TG : new ThreadGroup("Group of threads")
+activate TG
+
+TGD -> TE1 : new ThreadEx(ThreadGroup, "ThreadEx #1")
+activate TE1
+
+TGD -> TE2 : new ThreadEx(ThreadGroup, "ThreadEx #2")
+activate TE2
+
+TGD -> TE3 : new ThreadEx(ThreadGroup, "ThreadEx #3")
+activate TE3
+
+TGD -> TE1 : start()
+TE1 -> TGD : run()
+
+TGD -> TE2 : start()
+TE2 -> TGD : run()
+
+TGD -> TE3 : start()
+TE3 -> TGD : run()
+
+TGD -> TE1 : stopThread()
+TE1 -> TGD : stopThread()
+
+TGD -> TG : interrupt()
+TG -> TGD : interrupt()
+
+@enduml
+

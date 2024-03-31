@@ -8,6 +8,7 @@ public class Main {
         // Create Thread 1 for numbers greater than 50,000
         JoinTestThread w1 = new JoinTestThread("Thread 1", null, 50000);
 
+
         // Create Thread 2 for numbers greater than 20,000
         JoinTestThread w2 = new JoinTestThread("Thread 2", w1, 20000);
 

@@ -1,4 +1,4 @@
-package app1;
+package Ex1;
 
 public class Main {
 
@@ -7,14 +7,10 @@ public class Main {
     public static void main(String[] args){
 
         FileService service = new FileService("messages.txt");
-
-
         RThread reader = new RThread(service);
-
         WThread writer = new WThread(service);
 
         reader.start();
-
         writer.start();
 
     }

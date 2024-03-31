@@ -1,0 +1,15 @@
+@startuml
+class Main {
+    +static void main(String[] args)
+}
+
+class ThreadEx {
+    -boolean stop
+    +ThreadEx(ThreadGroup tg, String name)
+    +void run()
+    +void stopThread()
+}
+
+
+Main -- ThreadEx : creates >
+@enduml
