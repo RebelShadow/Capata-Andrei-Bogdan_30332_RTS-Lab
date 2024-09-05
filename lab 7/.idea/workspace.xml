@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5944e1f6-c232-4ef5-a6a9-10eff951613f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab 4/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab 4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab 4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab 4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab 4/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab 4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab 4/lab 4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/Example4/Activity Diagram.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/Example4/SequenceDiagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/Example4/State Diagram.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/Example4/StateDiagram (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/Example5/Activity Diagram.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/Example5/Sequence.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/Example5/State Diagram.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/Example5/State.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/example1/Class Diagram.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/example2/Activity Diagram.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/example2/State Machine.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/example3/Activity Diagram.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/example3/ActivityDiagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/example3/State Diagram.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/src/example3/StateDiagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/messages.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/messages.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/src/Ex1/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/src/Ex1/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/src/example1/ex1_Sequence.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/src/example1/ex1_Sequence.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/src/example2/example2_classdiagram.puml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2hHIYXXNpYlpHHsPVksRJWw2FtK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Controller1.executor": "Run",
+    "Application.Exp1.executor": "Run",
+    "Application.InputCar.executor": "Run",
+    "Application.InputInt.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Robot.executor": "Run",
+    "Application.test.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/facultate/an 3/sem 2/RTS/Lab/Capata-Andrei-Bogdan_30332_RTS-Lab/lab 7/OETPN",
+    "onboarding.tips.debug.path": "C:/facultate/an 3/sem 2/RTS/Lab/Capata-Andrei-Bogdan_30332_RTS-Lab/lab 7/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
+        <option value="jdk-11.0.22-semeru-11.0.22-e1d2075fd9a7-24488771" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5944e1f6-c232-4ef5-a6a9-10eff951613f" name="Changes" comment="" />
+      <created>1717244627005</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717244627005</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.net.ConnectException" package="java.net" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
